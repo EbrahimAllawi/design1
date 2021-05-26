@@ -1,0 +1,37 @@
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0478ec;
+  color: #ffce34;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 20px;
+  z-index: 9999999999;
+}
+
+.nav .logo {
+  text-align: left;
+  font-weight: bold;
+}
+
+.nav .navbar {
+  text-align: right;
+}
+
+.nav div {
+  display: inline;
+}
+/*# sourceMappingURL=nav.css.map */

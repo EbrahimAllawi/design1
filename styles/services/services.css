@@ -1,0 +1,51 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .services .service {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "imageService" "descripeService";
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .services .service {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "descripeService imageService";
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+.services .name-service {
+  text-align: center;
+  width: 200px;
+  margin: 7px auto;
+  background-color: #4ba5ff;
+  color: white;
+  font-size: 18px;
+}
+
+.first-letter {
+  text-transform: capitalize;
+  color: #0478ec;
+  font-size: 22px;
+}
+
+.services .service {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.services .service div {
+  grid-area: descripeService;
+}
+
+.services .service img {
+  width: 100%;
+  grid-area: imageService;
+}
+/*# sourceMappingURL=services.css.map */

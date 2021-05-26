@@ -1,0 +1,67 @@
+@import '../vars/vars.scss';
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .services .service {
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imageService"
+        "descripeService"
+        ;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .services .service {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "descripeService imageService"
+        ;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+.services {
+
+    
+}
+.services .name-service {
+    text-align: center;
+    width: 200px;
+    margin: 7px auto;
+    background-color: rgb(75, 165, 255);
+    color: white;
+    font-size: 18px;
+}
+.first-letter {
+    text-transform: capitalize;
+    color: $main;
+    font-size: 22px;
+}
+.services .service {
+    display: grid;
+    justify-items: center;
+}
+.services .service div {
+    grid-area: descripeService;
+}
+.services .service img {
+    width: 100%;
+    grid-area: imageService;
+}
